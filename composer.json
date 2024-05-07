@@ -1,0 +1,42 @@
+{
+    "name": "vlad/hubspot-crm-integration",
+    "description": "A WordPress plugin for integrating with HubSpot CRM",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vlad",
+            "email": "uladzimir.parkalau@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "hubspot/api-client": "^3.0"
+    },
+    "extra": {
+        "wordpress-plugin": {
+            "name": "hubspot-crm-integration",
+            "slug": "hubspot-crm-integration",
+            "version": "1.0",
+            "author": "Vlad",
+            "description": "Seamless integration with HubSpot CRM",
+            "textdomain": "hubspot-crm-integration",
+            "domain-path": "/languages",
+            "requires": {
+                "wordpress": "6.5.2",
+                "php": "^8.0"
+            },
+            "tested": "6.5.2",
+            "minimum-stability": "stable",
+            "homepage": "https://github.com/uparkalau/hubspot-crm-integration",
+            "support": {
+                "issues": "https://github.com/uparkalau/hubspot-crm-integration/issues",
+                "forum": "https://wordpress.org/support/plugin/hubspot-crm-integration"
+            }
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "platform-check": false
+    }
+}
