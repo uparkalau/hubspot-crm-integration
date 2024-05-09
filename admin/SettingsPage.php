@@ -151,7 +151,7 @@ class SettingsPage {
     
         try {
             $apiResponse = $hubspotClient->get_contacts();
-            include plugin_dir_path(__FILE__) . 'contacts-template.php';
+            require_once plugin_dir_path(__FILE__) . 'contacts-template.php';
         } catch (\Exception $e) {
             echo '<p>Exception when calling HubSpot API: ' . esc_html($e->getMessage()) . '</p>';
         }

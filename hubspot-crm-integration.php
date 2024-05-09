@@ -31,7 +31,6 @@ add_action('wp_enqueue_scripts', 'hubspot_crm_integration_enqueue_scripts');
 
 // Run the plugin.
 function run_hubspot_crm_integration() {
-    $SettingsPage = new HubspotCrmIntegration\Admin\SettingsPage();
     $FormHandler = new HubspotCrmIntegration\Includes\FormHandler();
     $HubspotClient = new HubspotCrmIntegration\Includes\HubspotClient();
     $shortcodes = new HubspotCrmIntegration\Public\Shortcodes();

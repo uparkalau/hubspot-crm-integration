@@ -3,7 +3,7 @@
         'name' => 'vlad/hubspot-crm-integration',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '3d1b0c19fc2a13ee59f298af9480939379870823',
+        'reference' => 'ba510c3e70783e35e376e54c816a2bc5a260aaa4',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -97,7 +97,7 @@
         'vlad/hubspot-crm-integration' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '3d1b0c19fc2a13ee59f298af9480939379870823',
+            'reference' => 'ba510c3e70783e35e376e54c816a2bc5a260aaa4',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
