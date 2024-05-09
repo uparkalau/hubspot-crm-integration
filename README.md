@@ -28,6 +28,7 @@ The **HubSpot CRM Integration** plugin simplifies lead management by automatical
 
 4. **Use the shortcode:**
    - Add the `[hubspot_contact_form]` shortcode to any post or page where you want the contact form to appear.
+   - `<?php echo do_shortcode('[hubspot_contact_form]'); ?>`
 
 ## Displaying Contacts in Admin Panel
 
