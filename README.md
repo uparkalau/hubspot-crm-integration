@@ -1,16 +1,22 @@
 # HubSpot CRM Integration
 
-This WordPress plugin integrates your WordPress site with HubSpot CRM to capture leads directly from your contact forms into your HubSpot contacts.
+The **HubSpot CRM Integration** WordPress plugin seamlessly connects your WordPress site with HubSpot CRM. It allows you to capture leads directly from contact forms on your website and add them to your HubSpot contacts.
 
 ## Description
 
-HubSpot CRM Integration allows you to create a WordPress plugin that integrates with HubSpot to capture leads from a contact form on your WordPress site and add them to your HubSpot contacts.
+The **HubSpot CRM Integration** plugin simplifies lead management by automatically syncing form submissions with your HubSpot account. When visitors submit contact forms, their information is instantly added to your HubSpot contacts, streamlining your workflow.
+
+## Features
+
+- **Contact Form Integration**: Place the `[hubspot_contact_form]` shortcode on any post or page to display a contact form. Submitted data is sent directly to HubSpot.
+- **Admin Panel Contacts Display**: View all your HubSpot contacts within the WordPress admin panel. The plugin fetches the latest contact data from HubSpot.
+- **Refresh Functionality**: Click the "Refresh" button to update the displayed contacts with the most recent information from HubSpot.
 
 ## Installation
 
 1. **Upload the plugin files to your WordPress site:**
-   - Navigate to the WordPress admin area.
-   - Go to `Plugins` > `Add New` > `Upload Plugin`.
+   - Log in to your WordPress admin area.
+   - Navigate to `Plugins` > `Add New` > `Upload Plugin`.
    - Choose the `hubspot-crm-integration.zip` file and click `Install Now`.
 
 2. **Activate the plugin:**
@@ -23,27 +29,23 @@ HubSpot CRM Integration allows you to create a WordPress plugin that integrates 
 4. **Use the shortcode:**
    - Add the `[hubspot_contact_form]` shortcode to any post or page where you want the contact form to appear.
 
-## Usage
+## Displaying Contacts in Admin Panel
 
-After installation and activation, simply place the `[hubspot_contact_form]` shortcode into the content area of any page or post where you want the HubSpot contact form to appear.
+To view your HubSpot contacts within the WordPress admin panel:
 
-## Enqueue Scripts and Styles
-
-The plugin automatically enqueues the necessary JavaScript and CSS files for the AJAX form submission and styling. Ensure that your theme allows `wp_head()` and `wp_footer()` functions to run, as these are required for the scripts and styles to load correctly.
-
-## Customization
-
-You can customize the form's appearance by editing the `assets/css/hubspot-style.css` file. If you need to modify the JavaScript functionality, you can edit the `assets/js/hubspot-form.js` file.
+1. Navigate to the plugin's admin page (created automatically during installation).
+2. Click the "Refresh" button to fetch the latest contacts from HubSpot.
+3. The contacts will be displayed in a table format, including relevant details such as email addresses, names, and more.
 
 ## Dependencies
 
 - PHP version 8.0 or higher.
 - Latest version of WordPress.
-- HubSpot PHP client(https://github.com/HubSpot/hubspot-api-php)
+- HubSpot PHP client
 
-## Composer
+## Composer (For Development)
 
-If you are setting up the plugin for development, you can use Composer to install the required dependencies. After cloning the repository, navigate to the plugin directory and run the following command:
+If you're setting up the plugin for development, use Composer to install the required dependencies. After cloning the repository, navigate to the plugin directory and run the following command:
 
 ```bash
 composer install

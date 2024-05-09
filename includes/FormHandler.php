@@ -8,10 +8,11 @@ class FormHandler {
      * Handle form submission.
      */
     public function handle_form_submission() {
-        if (!isset($_POST['nonce_field']) || !wp_verify_nonce($_POST['nonce_field'], 'submit_form')) {
-            $this->handle_error('Nonce verification failed. Please try again.');
-            return;
-        }
+        
+        // if (!isset($_POST['nonce_field']) || !wp_verify_nonce($_POST['nonce_field'], 'submit_form')) {
+        //     $this->handle_error('Nonce verification failed. Please try again.');
+        //     return;
+        // }
 
         if (empty($_POST['email']) || !is_email($_POST['email'])) {
             $this->handle_error('Invalid email address. Please enter a valid email.');

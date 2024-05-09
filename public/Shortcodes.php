@@ -42,6 +42,7 @@ class Shortcodes {
         $form_handler->handle_form_submission();
 
         wp_send_json_success('Form submitted successfully.');
+        wp_die();
     }
 }
 

@@ -25,6 +25,7 @@ function hubspot_crm_integration_enqueue_scripts() {
     wp_enqueue_style('hubspot-bootstrap-style', plugins_url('assets/css/hubspot-style.css', __FILE__));
     wp_enqueue_script('hubspot-form-script', plugins_url('assets/js/hubspot-form.js', __FILE__), array('jquery'), null, true);
     wp_localize_script('hubspot-form-script', 'hubspotAjax', array('ajaxurl' => admin_url('admin-ajax.php')));
+    wp_localize_script('refresh-contacts-script', 'hubspotAjax', array('ajaxurl' => admin_url('admin-ajax.php')));
 }
 add_action('wp_enqueue_scripts', 'hubspot_crm_integration_enqueue_scripts');
 
@@ -36,5 +37,4 @@ function run_hubspot_crm_integration() {
     $shortcodes = new HubspotCrmIntegration\Public\Shortcodes();
     $shortcodes->run();
 }
-
 run_hubspot_crm_integration();
